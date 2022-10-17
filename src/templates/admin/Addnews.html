@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head> -->
+{% extends "admin/adhm.html" %}
+{% block body %}
+<body>
+  <form id="form1" name="form1" method="post" action="addnews">
+<table  class="table table-bordered bg-warning">
+  <h1>ADD NEWS</h1>
+  <tr>
+    <th scope="row">News title </th>
+    <td><label>
+      <input class="form-control" type="text" name="textfield" required />
+    </label></td>
+  </tr>
+
+  <tr>
+    <th scope="row">date</th>
+    <td><label>
+      <input class="form-control" type="text" name="textfield2" required />
+    </label></td>
+  </tr>
+  <tr>
+    <th scope="row">News Details </th>
+    <td><label>
+      <input  class="form-control" type="text" name="textfield3" required/>
+    </label></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <input class="btn btn-success"type="submit" name="Submit" value="ADD" />
+    </th>
+  </tr>
+
+</table>
+  </form>
+</body>
+<!-- </html> -->
+{% endblock %}

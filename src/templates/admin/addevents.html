@@ -1,0 +1,43 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title> 
+</head>-->
+{% extends "admin/adhm.html" %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="addevents">
+  <table class="table table-bordered bg-warning">
+    <tr>
+      <h1>ADD EVENTS</h1>
+      <th  class="bg-success" scope="row"><div align="left">Event name </div></th>
+      <td class="bg-success"><label>
+        <input style="background-color:rgb(38, 14, 250) ;" type="text" name="textfield2"  title="please enter event name" required>
+      </label></td>
+    </tr>
+    <tr>
+      
+      <th class="bg-info"scope="row"><div align="left">Event date </div></th>
+      <td class="bg-info"><label>
+        <input style="background-color:rgb(38, 14, 250) ;" type="date" name="textfield3" title="enter date" required>
+      </label></td>
+
+       
+    </tr>
+    <tr>
+      <th class="bg-danger" height="76" scope="row"><div align="left">Event details </div></th>
+      <td class="bg-danger"><label>
+      <input style="background-color:rgb(38, 14, 250) ;" type="text" name="textfield4" title="enter event details"required >
+</label></td>
+    </tr>
+    <tr>
+      <th class="bg-warning"colspan="2" scope="row"><label>
+        <input style="background-color:rgb(99, 240, 11) ;" type="submit" name="Submit" value="ADD" />
+      </label></th>
+    </tr>
+  </table>
+</form>
+</body>
+<!-- </html>-->
+{% endblock %}

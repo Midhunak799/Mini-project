@@ -1,0 +1,33 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head> -->
+{% extends "user/ush.html" %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="402" border="1" class="table table-bordered table-dark">
+    <tr>
+      <th width="42" height="52" scope="row">Sl No </th>
+      <td width="108" height="27">eventname </td>
+      <td width="99">date</td>
+      <td width="218">details</td>
+    </tr>
+    {% for i in val %}
+    <tr>
+      <td height="76">&nbsp;{{ loop.index }}</td>
+      
+      <td>{{i['eventname']}}</td>
+      <td>{{i['date']}}</td>
+      <td>{{i['details']}}</td>
+
+    </tr>
+    {% endfor %}
+    
+  </table>
+</form>
+</body>
+<!-- </html> -->
+{% endblock %}
